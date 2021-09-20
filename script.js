@@ -13,3 +13,6 @@ bg:'red'
 };
 console.log(OPTIONS.name);
 
+delete OPTIONS.name;
+
+console.log(OPTIONS);
