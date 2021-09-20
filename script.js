@@ -1,9 +1,9 @@
 
 "use strict";
 /*
-Метод Object.keys() возвращает массив из собственных перечисляемых свойств переданного объекта, в том же порядке, в котором они бы обходились циклом for...in (разница между циклом и методом в том, что цикл перечисляет свойства и из цепочки прототипов).
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+Метод Object.getOwnPropertyNames() возвращает массив со всеми свойствами (независимо от того, перечисляемые они или нет), найденными непосредственно в переданном объекте.
 
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames
 */
 
 
@@ -18,7 +18,7 @@ bg:'red'
 }
 };
 
-console.log(Object.keys(OPTIONS));
+console.log(Object.getOwnPropertyNames(OPTIONS));
 
 /* RUN CODE 
 
