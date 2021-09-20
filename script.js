@@ -1,9 +1,8 @@
 
 "use strict";
 /*
-Метод Object.getOwnPropertyNames() возвращает массив со всеми свойствами (независимо от того, перечисляемые они или нет), найденными непосредственно в переданном объекте.
+Метод Object.keys(OPTIONS).length  ВЫВОДИТ КОЛ-ВО ЭЛЕМЕНТОВ  ВНУТРИ  МАССИВА
 
-https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames
 */
 
 
@@ -18,11 +17,11 @@ bg:'red'
 }
 };
 
-console.log(Object.getOwnPropertyNames(OPTIONS));
+console.log(Object.keys(OPTIONS).length);
 
 /* RUN CODE 
 
-[ 'name', 'width', 'height', 'colors' ]  */
+4  */
 
 
 
