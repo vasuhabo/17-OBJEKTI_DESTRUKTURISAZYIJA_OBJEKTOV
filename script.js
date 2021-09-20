@@ -1,6 +1,6 @@
 
 "use strict";
-
+// ДОСТУП  К  СВОЙСТВУ border 
 const OPTIONS = {
 name:'test',
 width:1024,
@@ -11,13 +11,23 @@ bg:'red'
 
 }
 };
-////console.log(OPTIONS.name);
+console.log(OPTIONS["colors"]["border"]);
+// RUN CODE ---> black
+
+
+
 
 //delete OPTIONS.name;
 
 //console.log(OPTIONS);
 
 for (let key in OPTIONS) {
+if (typeof(OPTIONS[key])  === 'object') {
+for (let i in OPTIONS[key]) {
+
+}
+
+}
 console.log(`Свойство ${key} имеет значение ${OPTIONS[key]}`);
 
 
