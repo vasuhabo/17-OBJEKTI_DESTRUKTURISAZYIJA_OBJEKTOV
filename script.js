@@ -41,3 +41,8 @@ for (let i in OPTIONS[key]) {
 Свойство height имеет значение 1024
 Свойство border имеет значение black
 Свойство bg имеет значение red */
+
+/*
+ССЫЛКА  НА  ВСЮ  ИНФОРМАЦИЮ  ПО  ОБЬЕКТУ
+
+https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object  */
