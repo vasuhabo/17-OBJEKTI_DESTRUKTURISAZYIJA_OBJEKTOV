@@ -1,6 +1,6 @@
 
 "use strict";
-// ДОСТУП  К  СВОЙСТВУ border 
+// ВЫВОД ВСЕХ СВОЙСТВ И ПОДСВОЙСТВ ( ИЛИ  ПОДКАТЕГОРИЙ  ДАННЫХ ОБЬЕКТА)
 const OPTIONS = {
 name:'test',
 width:1024,
@@ -11,7 +11,7 @@ bg:'red'
 
 }
 };
-console.log(OPTIONS["colors"]["border"]);
+//console.log(OPTIONS["colors"]["border"]);
 // RUN CODE ---> black
 
 
@@ -20,15 +20,17 @@ console.log(OPTIONS["colors"]["border"]);
 //delete OPTIONS.name;
 
 //console.log(OPTIONS);
-
+// ВЫВОД ВСЕХ СВОЙСТВ И ПОДСВОЙСТВ ( ИЛИ  ПОДКАТЕГОРИЙ  ДАННЫХ ОБЬЕКТА)
 for (let key in OPTIONS) {
 if (typeof(OPTIONS[key])  === 'object') {
 for (let i in OPTIONS[key]) {
-
+  console.log(`Свойство ${i} имеет значение ${OPTIONS[key][i]}`);
 }
 
+} else {
+  console.log(`Свойство ${key} имеет значение ${OPTIONS[key]}`);
 }
-console.log(`Свойство ${key} имеет значение ${OPTIONS[key]}`);
+
 
 
 }
@@ -37,4 +39,5 @@ console.log(`Свойство ${key} имеет значение ${OPTIONS[key]}
 Свойство name имеет значение test
 Свойство width имеет значение 1024
 Свойство height имеет значение 1024
-Свойство colors имеет значение [object Object]*/
+Свойство border имеет значение black
+Свойство bg имеет значение red */
