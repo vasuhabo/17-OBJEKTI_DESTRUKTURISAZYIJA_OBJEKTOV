@@ -13,9 +13,14 @@ height:1024,
 colors:{
 border:'black',
 bg:'red'
-
+},
+MAKE_TEST: function () {
+  console.log("Test");
 }
 };
+
+OPTIONS.MAKE_TEST();
+
 
 console.log(Object.keys(OPTIONS).length);
 
